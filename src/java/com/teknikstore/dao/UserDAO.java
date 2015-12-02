@@ -1,7 +1,7 @@
-package com.vaannila.dao;
+package com.teknikstore.dao;
 
 import java.util.List;
-import com.vaannila.domain.User;
+import com.teknikstore.domain.User;
 
 public interface UserDAO {
 

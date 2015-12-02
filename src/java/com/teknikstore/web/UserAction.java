@@ -1,13 +1,13 @@
-package com.vaannila.web;
+package com.teknikstore.web;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
-import com.vaannila.dao.UserDAO;
-import com.vaannila.dao.UserDAOImpl;
-import com.vaannila.domain.User;
+import com.teknikstore.dao.UserDAO;
+import com.teknikstore.dao.UserDAOImpl;
+import com.teknikstore.domain.User;
 
 public class UserAction extends ActionSupport implements ModelDriven<User> {
 
