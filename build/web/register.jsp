@@ -6,7 +6,7 @@
 <jsp:include page="frontend/topbar.jsp"></jsp:include>
 <jsp:include page="frontend/navbar.jsp"></jsp:include>
 
-<div id="all">
+    <div id="all">
 
         <div id="content">
             <div class="container">
@@ -53,66 +53,49 @@
 
                 <div class="col-md-6">
                     <div class="box">
-                        <s:form action="addUser">
-	<s:textfield name="name" label="User Name" />
-	<s:password name="password" label="Password" />
-	<s:radio name="gender" label="Gender" list="{'Male','Female'}" />
-	<s:select name="country" list="{'India','USA','UK'}" headerKey=""
-		headerValue="Country" label="Select a country" />
-	<s:textarea name="aboutYou" label="About You" />
-	<s:checkbox name="mailingList"
-		label="Would you like to join our mailing list?" />
-	<s:submit />
-</s:form>
+                    <s:form action="addUser">
+                        <s:textfield name="name" label="User Name" />
+                        <s:password name="password" label="Password" />
+                        <s:radio name="gender" label="Gender" list="{'Male','Female'}" />
+                        <s:select name="country" list="{'India','USA','UK'}" headerKey=""
+                                  headerValue="Country" label="Select a country" />
+                        <s:textarea name="aboutYou" label="About You" />
+                        <s:checkbox name="mailingList"
+                                    label="Would you like to join our mailing list?" />
+                        <s:submit />
+                    </s:form>
 
-<s:if test="userList.size() > 0">
-	<div class="content">
-	<table class="userTable" cellpadding="5px">
-		<tr class="even">
-			<th>Name</th>
-			<th>Gender</th>
-			<th>Country</th>
-			<th>About You</th>
-			<th>Mailing List</th>
-		</tr>
-		<s:iterator value="userList" status="userStatus">
-			<tr
-				class="<s:if test="#userStatus.odd == true ">odd</s:if><s:else>even</s:else>">
-				<td><s:property value="email" /></td>
-				<td><s:property value="gender" /></td>
-				<td><s:property value="country" /></td>
-				<td><s:property value="aboutYou" /></td>
-				<td><s:property value="mailingList" /></td>
-			</tr>
-		</s:iterator>
-	</table>
-	</div>
-</s:if>
-                    </div>
+                    <s:if test="userList.size() > 0">
+                        <div class="content">
+                            <table class="userTable" cellpadding="5px">
+                                <tr class="even">
+                                    <th>Name</th>
+                                    <th>Gender</th>
+                                    <th>Country</th>
+                                    <th>About You</th>
+                                    <th>Mailing List</th>
+                                </tr>
+                                <s:iterator value="userList" status="userStatus">
+                                    <tr
+                                        class="<s:if test="#userStatus.odd == true ">odd</s:if><s:else>even</s:else>">
+                                        <td><s:property value="email" /></td>
+                                        <td><s:property value="gender" /></td>
+                                        <td><s:property value="country" /></td>
+                                        <td><s:property value="aboutYou" /></td>
+                                        <td><s:property value="mailingList" /></td>
+                                    </tr>
+                                </s:iterator>
+                            </table>
+                        </div>
+                    </s:if>
                 </div>
-
-
             </div>
-            <!-- /.container -->
+
+
         </div>
-        <!-- /#content -->
+        <!-- /.container -->
+    </div>
+    <!-- /#content -->
 
-
-<jsp:include page="frontend/footer.jsp"></jsp:include>
-<jsp:include page="frontend/js.jsp"></jsp:include>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <jsp:include page="frontend/footer.jsp"></jsp:include>
+    <jsp:include page="frontend/js.jsp"></jsp:include>
