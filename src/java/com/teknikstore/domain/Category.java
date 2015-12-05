@@ -12,6 +12,34 @@ package com.teknikstore.domain;
 public class Category {
     private String category_id;
     private String category_name;
+
+    /**
+     * @return the category_id
+     */
+    public String getCategory_id() {
+        return category_id;
+    }
+
+    /**
+     * @param category_id the category_id to set
+     */
+    public void setCategory_id(String category_id) {
+        this.category_id = category_id;
+    }
+
+    /**
+     * @return the category_name
+     */
+    public String getCategory_name() {
+        return category_name;
+    }
+
+    /**
+     * @param category_name the category_name to set
+     */
+    public void setCategory_name(String category_name) {
+        this.category_name = category_name;
+    }
     
     
 }
