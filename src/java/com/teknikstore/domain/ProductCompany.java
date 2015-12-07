@@ -6,6 +6,7 @@
 package com.teknikstore.domain;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -17,6 +18,7 @@ import javax.persistence.Table;
 @Table(name = "product_company")
 public class ProductCompany {
    @Id
+   @GeneratedValue
    private int company_id; 
    private String company_name;
 

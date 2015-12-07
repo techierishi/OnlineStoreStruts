@@ -6,6 +6,7 @@
 package com.teknikstore.domain;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -18,6 +19,7 @@ import javax.persistence.Table;
 public class Administrators {
 
     @Id
+    @GeneratedValue
     private String admin_id;
     private String email;
     private String password;

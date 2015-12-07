@@ -7,6 +7,7 @@ package com.teknikstore.domain;
 
 import java.util.Date;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -19,6 +20,7 @@ import javax.persistence.Table;
 public class Products {
 
 @Id
+@GeneratedValue
 private int product_id;
 private String  product_name;
 private String sub_category_name; 

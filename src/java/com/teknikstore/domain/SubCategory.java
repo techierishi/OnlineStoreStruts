@@ -6,6 +6,7 @@
 package com.teknikstore.domain;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -17,6 +18,7 @@ import javax.persistence.Table;
 @Table(name = "sub_category")
 public class SubCategory {
 @Id
+@GeneratedValue
 private int subcategory_id;
 private String sub_category_name;
 private String category_name;

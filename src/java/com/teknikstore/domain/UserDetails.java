@@ -6,6 +6,7 @@
 package com.teknikstore.domain;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -19,6 +20,7 @@ import javax.persistence.Table;
 public class UserDetails {
 
     @Id
+    @GeneratedValue
     private int user_detail_id;
     private int user_id;
     private String username;

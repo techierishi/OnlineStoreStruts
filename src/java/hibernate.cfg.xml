@@ -23,7 +23,7 @@
         <mapping class="com.teknikstore.domain.ProductCompany" />
         <mapping class="com.teknikstore.domain.Products" />
         <mapping class="com.teknikstore.domain.Sales" />
-        <mapping class="com.teknikstore.domain.SupCategory" />
+        <mapping class="com.teknikstore.domain.SubCategory" />
         <mapping class="com.teknikstore.domain.User" />
         <mapping class="com.teknikstore.domain.UserDetails" />
                 
