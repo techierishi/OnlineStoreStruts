@@ -5,11 +5,19 @@
  */
 package com.teknikstore.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 /**
  *
  * @author Administrator
  */
+
+@Entity
+@Table(name = "images")
 public class Images {
+    @Id
     private int image_id;
     private String image_name;
     private String product_name;

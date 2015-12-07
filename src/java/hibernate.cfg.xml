@@ -12,7 +12,20 @@
         <property name="hibernate.connection.pool_size">10</property>
         <property name="show_sql">true</property>
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
-        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.hbm2ddl.auto">create</property>
+        
+        
+        <mapping class="com.teknikstore.domain.Administrators" />
+        <mapping class="com.teknikstore.domain.Category" />
+        <mapping class="com.teknikstore.domain.Expenses" />
+        <mapping class="com.teknikstore.domain.Images" />
+        <mapping class="com.teknikstore.domain.Order" />
+        <mapping class="com.teknikstore.domain.ProductCompany" />
+        <mapping class="com.teknikstore.domain.Products" />
+        <mapping class="com.teknikstore.domain.Sales" />
+        <mapping class="com.teknikstore.domain.SupCategory" />
         <mapping class="com.teknikstore.domain.User" />
+        <mapping class="com.teknikstore.domain.UserDetails" />
+                
     </session-factory>
 </hibernate-configuration> 

@@ -5,12 +5,20 @@
  */
 package com.teknikstore.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 /**
  *
  * @author Administrator
  */
+
+@Entity
+@Table(name = "user_details")
 public class UserDetails {
 
+    @Id
     private int user_detail_id;
     private int user_id;
     private String username;

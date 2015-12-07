@@ -6,12 +6,20 @@
 package com.teknikstore.domain;
 
 import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  *
  * @author Administrator
  */
+@Entity
+@Table(name = "expenses")
 public class Expenses {
+    
+    
+    @Id
     private int expenses_id;
     private int product_id;    
     private String product_name;

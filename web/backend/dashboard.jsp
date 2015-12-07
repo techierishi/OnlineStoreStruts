@@ -34,7 +34,7 @@
 
 
                 <!-- Control Sidebar -->
-            <jsp:include page="commons/common_sidebar.js" ></jsp:include>
+            <jsp:include page="commons/common_sidebar.jsp" ></jsp:include>
                 <!-- Add the sidebar's background. This div must be placed
                      immediately after the control sidebar -->
                 <div class="control-sidebar-bg"></div>
