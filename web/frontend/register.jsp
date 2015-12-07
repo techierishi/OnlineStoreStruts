@@ -3,10 +3,10 @@
 <%@taglib uri="/struts-tags" prefix="s"%>
 <!DOCTYPE html>
 <html lang="en">
-<jsp:include page="frontend/head.jsp"></jsp:include>
+<jsp:include page="commons/head.jsp"></jsp:include>
 <body>
-<jsp:include page="frontend/topbar.jsp"></jsp:include>
-<jsp:include page="frontend/navbar.jsp"></jsp:include>
+<jsp:include page="commons/topbar.jsp"></jsp:include>
+<jsp:include page="commons/navbar.jsp"></jsp:include>
 
     <div id="all">
 
@@ -100,7 +100,7 @@
     <!-- /#content -->
 </div>
 <!-- /#all -->
-<jsp:include page="frontend/footer.jsp"></jsp:include>
+<jsp:include page="commons/footer.jsp"></jsp:include>
 </body>
 
 </html>

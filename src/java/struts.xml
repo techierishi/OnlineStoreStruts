@@ -4,11 +4,11 @@
 
 <struts>
 	<package name="default" extends="hibernate-default">
-		<action name="addUser" method="add" class="com.vaannila.web.UserAction">
+		<action name="addUser" method="add" class="com.teknikstore.web.UserAction">
 			<result name="success" type="redirect">listUser</result>
 		</action>
-		<action name="listUser" method="list" class="com.vaannila.web.UserAction">
-			<result name="success">/register.jsp</result>
+		<action name="listUser" method="list" class="com.teknikstore.web.UserAction">
+			<result name="success">frontend/register.jsp</result>
 		</action>
 	</package>
 </struts>

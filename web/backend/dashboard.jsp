@@ -1,15 +1,15 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <jsp:include page="common/head.jsp"></jsp:include>
+    <jsp:include page="commons/head.jsp"></jsp:include>
 
         <body class="hold-transition skin-blue sidebar-mini">
             <div class="wrapper">
 
-            <jsp:include page="common/header.jsp"></jsp:include>
+            <jsp:include page="commons/header.jsp"></jsp:include>
 
                 <!-- Left side column. contains the logo and sidebar -->
-            <jsp:include page="common/sidebar.jsp"></jsp:include>
+            <jsp:include page="commons/sidebar.jsp"></jsp:include>
                 <!-- Content Wrapper. Contains page content -->
                 <div class="content-wrapper">
                     <!-- Content Header (Page header) -->
@@ -30,16 +30,16 @@
                     </section><!-- /.content -->
                 </div><!-- /.content-wrapper -->
 
-            <jsp:include page="common/footer.jsp"></jsp:include>
+            <jsp:include page="commons/footer.jsp"></jsp:include>
 
 
                 <!-- Control Sidebar -->
-            <jsp:include page="common/common_sidebar.js" ></jsp:include>
+            <jsp:include page="commons/common_sidebar.js" ></jsp:include>
                 <!-- Add the sidebar's background. This div must be placed
                      immediately after the control sidebar -->
                 <div class="control-sidebar-bg"></div>
             </div><!-- ./wrapper -->
 
-        <jsp:include page="common/script.js" ></jsp:include>
+        <jsp:include page="commons/script.js" ></jsp:include>
     </body>
 </html>
